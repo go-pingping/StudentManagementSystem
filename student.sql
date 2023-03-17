@@ -1,0 +1,78 @@
+create database StudentSM;
+
+use StudentSM;
+
+CREATE TABLE `student` (
+  `id` int(100) NOT NULL primary key auto_increment,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `standard` varchar(100) not null
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `student` (`id`, `name`, `email`, `phone`, `gender`, `standard`) VALUES
+(1, 'Liam ', 'Liam@gmail.com', '75369841236', 'Male', 'semester_2'),
+(2, 'Noah', 'Noah@gmail.com', '123687468', 'Male', 'semester_2'),
+(3, 'William', 'William@gmail.com', '103673654', 'Male', 'semester_2'),
+(4, 'James', 'James@gmail.com', '3679845610', 'Male', 'semester_2'),
+(5, 'Oliver', 'Oliver@gmail.com', '4789657894', 'Male', 'semester_2'),
+(6, 'Benjamin', 'Benjamin@gmail.com', '9874687495', 'Male', 'semester_2'),
+(7, 'Elijah', 'Elijah@gmail.com', '6789412365', 'Female', 'semester_2'),
+(8, 'Lucas', 'Lucas@gmail.com', '974894567', 'Female', 'semester_2'),
+(9, 'Mason', 'Mason@gmail.com', '4789557894', 'Female', 'semester_2'),
+(10, 'Logan', 'Logan@gmail.com', '9874897456', 'Male', 'semester_2'),
+-- (11, 'Alexander', 'Alexander@gmail.com', '8743012547', 'Male', 'semester_2'),
+-- (12, 'Jacob', 'Jacob@gmail.com', '7894789456', 'Female', 'semester_2'),
+-- (13, 'Ethan', 'Ethan@gmail.com', '6789478945', 'Female', 'semester_2'),
+-- (14, 'Michael', 'Michael@gmail.com', '7547896578', 'Male', 'semester_2'),
+-- (15, 'Daniel', 'Daniel@gmail.com', '9784578965', 'Female', 'semester_2'),
+-- (16, 'Henry', 'Henry@gmail.com', '7897478956', 'Male', 'semester_2'),
+-- (17, 'Jackson', 'Jackson@gmail.com', '9878978978', 'Female', 'semester_2'),
+-- (18, 'Sebastian', 'Sebastian@gmail.com', '6789478945', 'Male', 'semester_2'),
+-- (19, 'Aiden', 'Aiden@gmail.com', '7894789567', 'Female', 'semester_2'),
+-- (20, 'Matthew', 'Matthew@gmail.com', '7894756894', 'Female', 'semester_2'),
+-- (21, 'Samuel', 'Samuel@gmail.com', '5789475689', 'Male', 'semester_2'),
+-- (22, 'David', 'David@gmail.com', '4789657894', 'Male', 'semester_2'),
+-- (23, 'Joseph', 'Joseph@gmail.com', '9874557864', 'Male', 'semester_2'),
+-- (24, 'Carter', 'Carter@gmail.com', '7897456789', 'Female', 'semester_2'),
+-- (25, 'Owen', 'Owen@gmail.com', '4785698745', 'Male', 'semester_2'),
+-- (26, 'Wyatt', 'Wyatt@gmail.com', '5789478569', 'Male', 'semester_2'),
+-- (27, 'John', 'John@gmail.com', '5789475687', 'Female', 'semester_2'),
+-- (28, 'Jack', 'Jack@gmail.com', '7587469856', 'Female', 'semester_2'),
+-- (29, 'Luke', 'luke@gmail.com', '5789475687', 'Male', 'semester_2'),
+-- (30, 'Jayden', 'Jayden@gmail.com', '9874789478', 'Male', 'semester_2'),
+(31, 'Liam ', 'Liam@gmail.com', '75369841236', 'Male', 'semester_1'),
+(32, 'Noah', 'Noah@gmail.com', '123687468', 'Male', 'semester_1'),
+(33, 'William', 'William@gmail.com', '103673654', 'Male', 'semester_1'),
+(34, 'James', 'James@gmail.com', '3679845610', 'Male', 'semester_1'),
+(35, 'Oliver', 'Oliver@gmail.com', '4789657894', 'Male', 'semester_1'),
+(36, 'Benjamin', 'Benjamin@gmail.com', '9874687495', 'Male', 'semester_1'),
+(37, 'Elijah', 'Elijah@gmail.com', '6789412365', 'Female', 'semester_1'),
+(38, 'Lucas', 'Lucas@gmail.com', '974894567', 'Female', 'semester_1'),
+(39, 'Mason', 'Mason@gmail.com', '4789557894', 'Female', 'semester_1'),
+-- (40, 'Logan', 'Logan@gmail.com', '9874897456', 'Male', 'semester_1'),
+-- (41, 'Alexander', 'Alexander@gmail.com', '8743012547', 'Male', 'semester_1'),
+-- (42, 'Jacob', 'Jacob@gmail.com', '7894789456', 'Female', 'semester_1'),
+-- (43, 'Ethan', 'Ethan@gmail.com', '6789478945', 'Female', 'semester_1'),
+-- (44, 'Michael', 'Michael@gmail.com', '7547896578', 'Male', 'semester_1'),
+-- (45, 'Daniel', 'Daniel@gmail.com', '9784578965', 'Female', 'semester_1'),
+-- (46, 'Henry', 'Henry@gmail.com', '7897478956', 'Male', 'semester_1'),
+-- (47, 'Jackson', 'Jackson@gmail.com', '9878978978', 'Female', 'semester_1'),
+-- (48, 'Sebastian', 'Sebastian@gmail.com', '6789478945', 'Male', 'semester_1'),
+-- (49, 'Aiden', 'Aiden@gmail.com', '7894789567', 'Female', 'semester_1'),
+-- (50, 'Matthew', 'Matthew@gmail.com', '7894756894', 'Female', 'semester_1'),
+-- (51, 'Samuel', 'Samuel@gmail.com', '5789475689', 'Male', 'semester_1'),
+-- (52, 'David', 'David@gmail.com', '4789657894', 'Male', 'semester_1'),
+-- (53, 'Joseph', 'Joseph@gmail.com', '9874557864', 'Male', 'semester_1'),
+-- (54, 'Carter', 'Carter@gmail.com', '7897456789', 'Female', 'semester_1'),
+-- (55, 'Owen', 'Owen@gmail.com', '4785698745', 'Male', 'semester_1'),
+-- (56, 'Wyatt', 'Wyatt@gmail.com', '5789478569', 'Male', 'semester_1'),
+-- (57, 'John', 'John@gmail.com', '5789475687', 'Female', 'semester_1'),
+-- (58, 'Jack', 'Jack@gmail.com', '7587469856', 'Female', 'semester_1'),
+-- (59, 'Luke', 'luke@gmail.com', '5789475687', 'Male', 'semester_1'),
+(60, 'Jayden', 'Jayden@gmail.com', '9874789478', 'Male', 'semester_1');
+
+SELECT * FROM student;
+
+drop table student;
